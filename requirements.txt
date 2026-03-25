@@ -1,0 +1,9 @@
+# === Agent + LLM Tools ===
+
+# === Web Framework + API ===
+python-dotenv
+requests
+
+# === Data Analysis / Display (Optional Enhancements) ===
+matplotlib
+pandas
