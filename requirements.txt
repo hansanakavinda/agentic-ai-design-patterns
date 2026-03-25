@@ -7,3 +7,4 @@ requests
 # === Data Analysis / Display (Optional Enhancements) ===
 matplotlib
 pandas
+qrcode
