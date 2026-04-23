@@ -1,4 +1,5 @@
-# === Agent + LLM Tools ===
+tinydb
+rich
 
 # === Web Framework + API ===
 python-dotenv
