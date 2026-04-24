@@ -4,6 +4,7 @@ import json
 from dotenv import load_dotenv
 from tavily import TavilyClient
 import pandas as pd
+from rich import print as rp
 
 from inventory_utils import create_inventory_dataframe
 
@@ -111,7 +112,7 @@ def get_tool_response(tool_call):
     tool_args = json.loads(tool_call["function"]["arguments"])
     tool_output = TOOL_MAPPING[function_name](**tool_args)
 
-    print(f"Executing {function_name}... Result: {tool_output}")
+    rp(f"Executing {function_name}... Result: {tool_output}")
 
     return {
         "role": "tool",
